@@ -1,0 +1,113 @@
+{
+  "name": "Spotify Glass",
+  "version": "0.1.0",
+  "platform": "Windows",
+  "tested_spicetify": "2.46.4",
+  "tested_spotify": "1.2.94.583.g60394bd5",
+  "assets": [
+    {
+      "path": "CustomApps/lyrics-plus/conversion.png",
+      "sha256": "19474175fad69d3409a52d43d9499e27eb4ce3529b0a5ccd24a1cc15072cc3f4"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/genius.png",
+      "sha256": "94fd267b60075e5820803d364839efd512508546eb35c48b7dea194551a1aa00"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/index.js",
+      "sha256": "6a5861e0812db7f2b8cd4a768dc6958eab4013d8ffea4be4d87dd9e40a4c31dd"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/kara.png",
+      "sha256": "6590aaf7ef4b90c740583e28c19fcf9bb36c3db6b7a00c27e8ab15aad7f65ae9"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/lockin.png",
+      "sha256": "53341381a0402b2e7fa1b8a030435c28ec527f0208f1fd72d7c41fdf0a4f3eec"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/manifest.json",
+      "sha256": "49b9d12e664c310b8e24dd01a0ef798795ec58215d8dfd5c3001b837df6b304c"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/OptionsMenu.js",
+      "sha256": "82caf76ffe4e884dced144e834be9cd041ca1b8dff232be7803149a5f259a6a5"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/Pages.js",
+      "sha256": "af4b27b07f1d994f7004a8e2afcb6fcde05b4d2637918eb45bbfb37645ce585d"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/PlaybarButton.js",
+      "sha256": "10814766dc872140aa56aa0fbb75a814e27aa755e1fd75f84180517a0e3443f8"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/ProviderGenius.js",
+      "sha256": "215170647cac2a02763cc7776c74f45f478eb7e666f0ef8f5ea4ffb41c321959"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/ProviderLRCLIB.js",
+      "sha256": "fb1992a45cb0640a34a409da175daf3ade008fe9fc91460ec4a96d777d3ccb47"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/ProviderMusixmatch.js",
+      "sha256": "9ab80c943840d0b36ea3eab6fb084309e96f12084a1033e385d3c13168b56d58"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/ProviderNetease.js",
+      "sha256": "30bd559654856666960bf64aee5a38b6b7d1b7e93cf64b1b03d6a897b0100d6d"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/Providers.js",
+      "sha256": "63dcfb711a18c6e66a01fdf5fc5bf5944cd2832c622d83e202cbbbe7be0c4e2b"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/README.md",
+      "sha256": "117135d3941898eae2b07db20f736e9e33efcfca4b88bbfbe538e9349a55cb31"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/search.png",
+      "sha256": "6505cfec4d3fdb7d288036acec4172134ef4a50a5145a920c3155b9aa8da01d7"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/Settings.js",
+      "sha256": "c2aacfee7b3cc6e33b9b3cfdf22b9d77548b2484d5d404e4b205829d4c778518"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/style.css",
+      "sha256": "d6c0d321e0a5f0abdc3318dfbb581848640d143d405d4231c733aa30b475c4a5"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/TabBar.js",
+      "sha256": "580396169656d260b29e24498fdb481b5eb02c557e6d452c38768c2ece4562a8"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/Translator.js",
+      "sha256": "422f5c122d93a4579940adf18641c714061c8bee78924550b5239a7c25f77145"
+    },
+    {
+      "path": "CustomApps/lyrics-plus/Utils.js",
+      "sha256": "20f13fa9c5450f29b0039e113c8d38864649d7a1771f256d91e68c872cf85d96"
+    },
+    {
+      "path": "Extensions/fadQueueOverlay.js",
+      "sha256": "32e79f0f73b73e75b0fc5a696a5be7d3c39169be4787e1c995f35f0a6a648203"
+    },
+    {
+      "path": "Extensions/fitFadTitle.js",
+      "sha256": "80a9f740807567fd65ea369a9324adf9fefaf07833f0803db0eb861edbc12d40"
+    },
+    {
+      "path": "Extensions/fullAppDisplay.js",
+      "sha256": "1cddae7c97c0132dfa8312b70e5efd52d8f6dfabc6232fed29bfee233847b387"
+    },
+    {
+      "path": "Themes/QuietLyrics/color.ini",
+      "sha256": "1b3d3a978e2c98096f9658faad3d54a437408059005bcf973986f48986a346b7"
+    },
+    {
+      "path": "Themes/QuietLyrics/user.css",
+      "sha256": "27bad6fb3b9f32e6f0929ce83c9b50d1f002a3885abeb8700332fd84c733e35e"
+    }
+  ]
+}

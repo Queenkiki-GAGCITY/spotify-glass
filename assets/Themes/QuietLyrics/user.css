@@ -1,0 +1,17 @@
+﻿.lyrics-lyrics-background,
+.lyrics-lyrics-container {
+  background: #181818 !important;
+  background-color: #181818 !important;
+  --lyrics-color-background: #181818 !important;
+  --lyrics-color-active: #eeeeee !important;
+  --lyrics-color-inactive: #999999 !important;
+}
+
+.lyrics-lyricsContent-lyric {
+  color: #999999 !important;
+}
+
+.lyrics-lyricsContent-active,
+.lyrics-lyricsContent-highlight {
+  color: #eeeeee !important;
+}

@@ -11,6 +11,33 @@ Spotify 또는 Spicetify 공식 프로젝트가 아닙니다. 첫 공개용 미�
 - 다른 버전의 자동 호환은 보장하지 않습니다. Spotify 프로그램이나 Spicetify 실행 파일은 배포본에 들어 있지 않습니다.
 - Spicetify 초기 설정과 Spotify 원본 백업을 먼저 완료하세요. 설치 안내: https://spicetify.app/docs/getting-started
 
+## 처음이라면: Spicetify 설치부터
+
+처음 사용하는 분은 [Windows 설치 가이드](docs/WINDOWS_SETUP.md)를 순서대로 따라 하세요. Spotify 설치 → Spicetify 설치 → 원본 백업 → Spotify Glass 적용까지 안내합니다.
+
+1. [Spotify Windows 앱](https://www.spotify.com/download/windows/)을 설치하고 로그인한 상태로 1분 이상 실행한 뒤 완전히 종료합니다. Spicetify는 공식 설치판을 권장하며 Microsoft Store판은 부분 지원입니다.
+2. **관리자 권한이 아닌 PowerShell**에서 다음 명령을 실행합니다.
+
+   ```powershell
+   winget install --id Spicetify.Spicetify --exact
+   ```
+
+3. PowerShell을 닫았다가 새로 열고, 아래 명령을 **한 줄씩** 실행합니다.
+
+   ```powershell
+   spicetify --version
+   spicetify backup apply
+   ```
+
+4. Spotify가 다시 실행됐다면 종료하고, [배포 페이지](https://github.com/Queenkiki-GAGCITY/spotify-glass/releases/tag/v0.1.0)의 **Spotify-Glass-v0.1.0.zip**을 받아 전체 압축 해제합니다. 압축을 푼 폴더의 PowerShell에서 실행하세요.
+
+   ```powershell
+   .\Install.ps1
+   spicetify auto
+   ```
+
+Marketplace는 이 패치에 필수가 아닙니다. 명령어를 찾지 못하거나 Store판 경고가 표시되면 [상세 가이드의 문제 해결](docs/WINDOWS_SETUP.md#문제-해결)을 확인하세요. 최신 Spicetify가 설치돼도 이 미리보기 패치가 최신 Spotify와 자동으로 호환되는 것은 아닙니다.
+
 ## 설치
 
 ZIP 전체를 압축 해제하고 Spotify를 완전히 종료합니다. 압축 해제한 폴더에서 관리자 권한이 아닌 PowerShell을 열어 실행합니다.

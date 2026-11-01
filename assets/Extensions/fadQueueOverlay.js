@@ -8,6 +8,9 @@
   let viewMode = 'queue', sourceToken = 0, sourceUri = '', selectedSource = '', libraryToken = 0;
   const style = document.createElement('style');
   style.textContent = `
+    #full-app-display #fad-release-date { display:none!important; }
+    #full-app-display #fad-art { position:relative; }
+    #full-app-display #fad-cover-release-date { position:absolute; top:100%; right:0; margin-top:7px; padding:0; border:0; border-radius:0; background:none!important; box-shadow:none; color:inherit; opacity:.56; font-family:inherit; font-size:13px; font-weight:400; line-height:1.25; letter-spacing:.01em; text-align:right; white-space:nowrap; pointer-events:none; }
     body.fad-activated .Root__main-view, body.fad-route-transition .Root__main-view { visibility:hidden!important; }
     body.fad-activated #full-app-display { top:var(--fad-popup-top,64px)!important; bottom:var(--fad-popup-bottom,90px)!important; height:calc(100% - var(--fad-popup-top,64px) - var(--fad-popup-bottom,90px))!important; z-index:100; overflow:hidden; isolation:isolate; transform:translateZ(0); border-radius:14px; }
     #fad-native-library-toggle { position:absolute; top:12px; left:18px; width:34px; height:34px; display:grid; place-items:center; padding:5px; background:#ffffff10; border:1px solid #ffffff18; border-radius:10px; color:#eee; z-index:200; cursor:pointer; -webkit-app-region:no-drag; }
@@ -713,6 +716,16 @@
     document.body.style.setProperty('--fad-popup-top',top+'px');
     document.body.style.setProperty('--fad-popup-bottom',bottom+'px');
   }
+  function ensureCoverReleaseDate() {
+    const art=document.getElementById('fad-art');
+    if(!art) return;
+    const source=document.getElementById('fad-release-date');
+    const date=source?.textContent?.trim() || '';
+    let label=document.getElementById('fad-cover-release-date');
+    if(!date) {label?.remove();return;}
+    if(!label) {label=document.createElement('div');label.id='fad-cover-release-date';art.append(label);}
+    if(label.textContent!==date) label.textContent=date;
+  }
   let volumeBusy=false, pendingVolume=null, lastAudibleVolume=.5, volumeDragging=false;
   function readVolume() {
     const value=Number(Spicetify.Player.getVolume());
@@ -769,6 +782,7 @@
     const fad = document.getElementById('full-app-display');
     if (!fad || !document.body.classList.contains('fad-activated')) { if(opened) close(); closeNativeLibrary();document.body.classList.remove('fad-native-queue');syncNativePopovers(); return; }
     sizePopup();
+    ensureCoverReleaseDate();
     ensureVolume();
     const controls = document.getElementById('fad-controls');
     document.getElementById('fad-queue-toggle')?.remove();
